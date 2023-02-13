@@ -1,15 +1,26 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-);
+import React from 'react';
+import { createRoot } from 'react-dom/client';
+import { Provider } from 'react-redux';
+import { RouterProvider } from 'react-router-dom';
+import { store } from 'src/store';
+
+import reportWebVitals from './reportWebVitals';
+import Router from './router';
+
+const container = document.getElementById('root') || document.body;
+const root = createRoot(container);
+
 root.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <div className="content">
+        <React.Suspense>
+          <RouterProvider router={Router} />
+        </React.Suspense>
+      </div>
+    </Provider>
   </React.StrictMode>
 );
 

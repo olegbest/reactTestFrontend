@@ -1,0 +1,51 @@
+@import 'src/styles/variables';
+
+.aButton {
+  button {
+    text-transform: uppercase;
+    padding: 8px 12px;
+    border: none;
+    border-radius: $mediumBorderRadius;
+    background: #f2f2f2;
+    color: black;
+    box-shadow: $primaryBoxShadow;
+    font-size: 13px;
+    font-weight: bold;
+
+    &:hover {
+      cursor: pointer;
+      background: #e4e2e2;
+    }
+  }
+
+  &.primary {
+    button {
+      background: $primaryColor;
+      color: white;
+
+      &:hover {
+        background: $primarySecondColor;
+      }
+    }
+  }
+
+  &.error {
+    button {
+      background: $errorColor;
+      color: white;
+
+      &:hover {
+        background: $errorSecondColor;
+      }
+    }
+  }
+
+  &.small button {
+    padding: 4px 6px;
+    font-size: 10px;
+  }
+  &.large button {
+    padding: 10px 14px;
+    font-size: 15px;
+  }
+}

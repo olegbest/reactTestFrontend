@@ -1,0 +1,7 @@
+@import "src/styles/variables";
+
+.actions {
+  display: flex;
+  gap: $mediumSpace;
+  margin-top: $largeSpace;
+}

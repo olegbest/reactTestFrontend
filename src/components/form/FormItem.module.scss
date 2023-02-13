@@ -1,0 +1,15 @@
+@import 'src/styles/variables.scss';
+
+.wrapper {
+  margin-bottom: $mediumSpace;
+}
+
+.error {
+  margin-top: $smallSpace;
+  min-height: 25px;
+  color: $errorColor;
+}
+
+.name {
+  margin-bottom: $smallSpace;
+}

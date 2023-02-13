@@ -1,0 +1,37 @@
+@import 'src/styles/variables.scss';
+
+.dialog {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  &.active {
+    display: flex;
+  }
+
+  .wrapper {
+    padding: $largeSpace;
+    border-radius: $mediumBorderRadius;
+    background-color: white;
+  }
+
+  .top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: $largeSpace;
+  }
+  .close {
+    cursor: pointer;
+  }
+  .title {
+    font-size: 17px;
+    font-weight: bold;
+    margin-right: $mediumSpace;
+  }
+}

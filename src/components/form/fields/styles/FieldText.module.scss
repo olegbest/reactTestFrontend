@@ -1,0 +1,14 @@
+@import 'src/styles/variables.scss';
+
+.textarea, .input {
+  width: 100%;
+  box-shadow: $primaryBoxShadow;
+  border: none;
+  padding: 7px;
+  border-radius: $smallBorderRadius;
+}
+
+.textarea {
+  resize: none;
+  height: 200px;
+}
